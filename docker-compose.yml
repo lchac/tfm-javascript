@@ -9,5 +9,5 @@ services:
       - '3000:3000'
     environment:
       - NODE_ENV=production
-      - DATABASE_URL=mongodb+srv://lachve:FU6K6GcJefG4ZXiV@clustertfm.bftl8.mongodb.net/TFM?retryWrites=true&w=majority&appName=ClusterTFM
+      - DATABASE_URL=mongodb+srv://lachve:${DB_PASSWORD}@clustertfm.bftl8.mongodb.net/TFM?retryWrites=true&w=majority&appName=ClusterTFM
     restart: unless-stopped
