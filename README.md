@@ -71,3 +71,15 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+## Dev Notes
+
+Before executing Docker compose, you need to set the following environment variables:
+
+`export DB_PASSWORD=`
+`export CREDIT_SCORE_URL=http://localhost/score/
+
+### Docker compose
+
+`docker compose up --build -d` or `docker compose up -d` if you already have the images.
+`docker compose down` to stop the containers.
