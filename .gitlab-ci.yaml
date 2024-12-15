@@ -1,0 +1,24 @@
+# .gitlab-ci.yml
+
+stages:
+  - build
+  - test
+  - deploy
+
+variables:
+  GITHUB_REPO: https://github.com/lchac/tfm-javascript # Your GitHub repository
+
+before_script:
+  - echo "Starting build..."
+
+build:
+  stage: build
+  image: docker:latest
+  services:
+    - docker:dind
+  script:
+    - echo "Cloning GitHub repository..."
+    - git clone $GITHUB_REPO .
+    - echo "Building Docker image..."
+    - ls -la
+# Change this to your default branch
