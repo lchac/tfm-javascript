@@ -81,5 +81,6 @@ Before executing Docker compose, you need to set the following environment varia
 
 ### Docker compose
 
-`docker compose up --build -d` or `docker compose up -d` if you already have the images.
+`docker compose up --build -d` or `docker compose up -d`
+if you already have the images.
 `docker compose down` to stop the containers.
