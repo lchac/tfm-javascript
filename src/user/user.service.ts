@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
-import { CreditScoreService } from 'src/credit-score/credit-score.service';
+import { CreditScoreService } from '../credit-score/credit-score.service';
 
 @Injectable()
 export class UserService {
