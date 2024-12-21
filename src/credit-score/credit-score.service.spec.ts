@@ -1,11 +1,13 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { CreditScoreService } from './credit-score.service';
+import { CreditScoreService } from '../credit-score/credit-score.service';
+import { HttpModule } from '@nestjs/axios';
 
 describe('CreditScoreService', () => {
   let service: CreditScoreService;
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
+      imports: [HttpModule],
       providers: [CreditScoreService],
     }).compile();
 
